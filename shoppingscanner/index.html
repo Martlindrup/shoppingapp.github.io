@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scan page</title>
+    <link rel="manifest" href="../manifest.json">
+    <style>
+        .nav-ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            width: auto;
+        }
+
+        .nav-li {
+            float: left;
+        }
+
+        .nav-li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 28px;
+            text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        .nav-li a:hover {
+            background-color: #111;
+
+            
+        }
+
+        .content-container {
+            width: 300px;
+            background: #ffffff;
+
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body {
+            font-family: Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="nav-ul">
+        <li class="nav-li"><a href="index.html">Under indkøb</a></li>
+        <li class="nav-li"><a href="../aftershoppinglookup/index.html">Efter indkøb</a></li>
+    </ul>
+    
+    <div class="content-container">
+
+        <input class="image-capture" type="file" accept="image/*" capture="environment">
+
+        <input type="file" accept="image/*" id="file-input">
+        <script>
+            const fileInput = document.getElementById('file-input');
+          
+            fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
+        </script>
+    </div>
+
+</body>
+
+
+</html>

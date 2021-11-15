@@ -1,0 +1,8 @@
+{
+    "name": "Scan App",
+    "shortname": "Scan App",
+    "start_url": ".",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
+
+}
